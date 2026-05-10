@@ -29,6 +29,17 @@ int FibonacciNumberList(int num){
     }
     return total;
 }
+
+int ArraySum() {
+    int numList[] = {10,20,30,40,50,60,70,80,90,100};
+
+    int numListSize = sizeof(numList) / sizeof(numList[0]);
+    for (int i = 0; i < numListSize; i++){
+        printf("%d ",numList[i]);
+    }
+    return 0;
+}
+
 int main() {
     int num = randomNumber();
     printf("%d",num);
@@ -42,6 +53,7 @@ int main() {
     num = FibonacciNumberList(2);
     printf("%d",num);
 
+    ArraySum();
     getchar();
     return 0;
 }
